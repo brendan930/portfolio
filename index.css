@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .side{
   display:grid;grid-template-columns:20% 80%;
   grid-template-rows:100%;
@@ -86,7 +90,7 @@ a{
   ;
   height:750px;
 }
-.grid4 {
+.menu1 {
   background-color:#2a3132;
   grid-area:g2-4;
   text-align: center;
@@ -108,22 +112,62 @@ a{
   justify-content: center;
   align-items: center;
 }
-.CV {
-  display:grid;grid-template-columns:40% 60%;
-  grid-template-areas:
-  "g3-1 g3-2"
-  ;
+
+.CV-container {
+  display: flex;
 }
-.C1 {
+
+.white-left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  height: 100vh;
+  width: 50%;
+}
+
+.black-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  width: 50%;
+  height: 100vh;
+}
+
+.inner-white {
+  background-color: black;
+  height: 80%;
+  width: 80%;
+}
+
+.inner-black {
+  background-color: white;
+  height: 80%;
+  width: 80%;
+}
+
+/*
+.white-left {
   background-color: white;
   grid-area: g3-1;
   height: 100%;
 }
-.C3 {
+.inner-white {
   background-color: black;
   grid-area: g3-2;
   height: 100%;
 }
+.black-left {
+  background-color: white;
+  grid-area: g3-1;
+  height: 100%;
+}
+.inner-black {
+  background-color: black;
+  grid-area: g3-2;
+  height: 100%;
+} */
 .s1{
   display:grid;grid-template-columns:20% 80%;
   grid-template-rows:25% 75%;
@@ -133,17 +177,9 @@ a{
   ;
   height:750px;
 }
-.g1 {
+.menu {
   background-color:#003366;
   grid-area:g2-1;
   text-align: center;
   color: white;
-}
-.g2 {
-  background-color:white;
-  grid-area:g2-2;
-  padding-left: 30px;
-  padding-top: 30px;
-  padding: 50px;
-  padding-bottom: 30px;
 }
