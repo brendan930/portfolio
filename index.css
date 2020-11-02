@@ -2,12 +2,16 @@
   margin: 0;
   padding: 0;
 }
+h2 {
+  padding-top: 21px;
+  padding-left: 5px;
+}
 .side{
   display:grid;grid-template-columns:20% 80%;
   grid-template-rows:100%;
   grid-template-areas:
   "g2-1 g2-2";
-  height:1000px;
+  height:100vh;
 }
 .grid1 {
   background-color:#003366;
@@ -24,7 +28,7 @@
   grid-template-rows:100%;
   grid-template-areas:
   "g2-1 g2-2";
-  height:1000px;
+  height:100vh;
 }
 .grid1 {
   background-color:#003366;
@@ -43,7 +47,7 @@
   "g2-1 g2-3"
   "g2-1 g2-2"
   ;
-  height:750px;
+  height:100vh;
 }
 .grid1 {
   background-color:#003366;
@@ -72,8 +76,8 @@
   margin-left: 110px;
 }
 a{
-    text-decoration-style: none;
-    color: white;
+  text-decoration-style: none;
+  color: white;
 }
 .Word1 {
   color: white;
@@ -88,7 +92,7 @@ a{
   "g2-4 g2-6"
   "g2-4 g2-5"
   ;
-  height:750px;
+  height:100vh;
 }
 .menu1 {
   background-color:#2a3132;
@@ -123,7 +127,7 @@ a{
   align-items: center;
   background-color: white;
   height: 100vh;
-  width: 50%;
+  width: 40%;
 }
 
 .black-right {
@@ -131,43 +135,25 @@ a{
   justify-content: flex-start;
   align-items: center;
   background-color: black;
-  width: 50%;
+  width: 60%;
   height: 100vh;
 }
 
 .inner-white {
+  display: flex;
+  justify-content: center;
   background-color: black;
   height: 80%;
   width: 80%;
+  color: white;
 }
 
 .inner-black {
   background-color: white;
   height: 80%;
-  width: 80%;
+  width: 90%;
 }
 
-/*
-.white-left {
-  background-color: white;
-  grid-area: g3-1;
-  height: 100%;
-}
-.inner-white {
-  background-color: black;
-  grid-area: g3-2;
-  height: 100%;
-}
-.black-left {
-  background-color: white;
-  grid-area: g3-1;
-  height: 100%;
-}
-.inner-black {
-  background-color: black;
-  grid-area: g3-2;
-  height: 100%;
-} */
 .s1{
   display:grid;grid-template-columns:20% 80%;
   grid-template-rows:25% 75%;
@@ -175,11 +161,18 @@ a{
   "g2-1 g2-3"
   "g2-1 g2-2"
   ;
-  height:750px;
+  height:100vh;
 }
 .menu {
   background-color:#003366;
   grid-area:g2-1;
   text-align: center;
   color: white;
+}
+.CV-intro {
+  padding-top: 150px;
+}
+.CV-main {
+  display: flex;
+  justify-content: center;
 }
